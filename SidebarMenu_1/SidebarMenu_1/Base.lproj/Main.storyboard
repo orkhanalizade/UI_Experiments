@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Cxp-Ye-8YB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sidebar Menu-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SidebarMenu_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WtY-ep-kH2">
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="667"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" image="13" translatesAutoresizingMaskIntoConstraints="NO" id="Qdx-PN-gN6">
+                                        <rect key="frame" x="0.0" y="0.0" width="123" height="667"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="123" id="yD1-Wq-fSb"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MWQ-x0-LZe">
+                                        <rect key="frame" x="0.0" y="64" width="80" height="603"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="left" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilN-7D-LJt">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="120.5"/>
+                                                <state key="normal" image="if_jee01-32_2184666"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nO6-hN-Zd8">
+                                                <rect key="frame" x="0.0" y="120.5" width="80" height="120.5"/>
+                                                <state key="normal" title="Button" image="if_jee01-24_2184646"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPz-xK-4Fc">
+                                                <rect key="frame" x="0.0" y="241" width="80" height="121"/>
+                                                <state key="normal" title="Button" image="if_jee01-28_2184670"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKG-FQ-NfN">
+                                                <rect key="frame" x="0.0" y="362" width="80" height="120.5"/>
+                                                <state key="normal" title="Button" image="if_jee01-35_2184645"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANs-hX-rVn">
+                                                <rect key="frame" x="0.0" y="482.5" width="80" height="120.5"/>
+                                                <state key="normal" title="Button" image="if_additional_icons-04_2239895"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="xEI-JB-2ZH"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="MWQ-x0-LZe" firstAttribute="top" secondItem="WtY-ep-kH2" secondAttribute="top" constant="64" id="2O9-dg-BhU"/>
+                                    <constraint firstAttribute="bottom" secondItem="Qdx-PN-gN6" secondAttribute="bottom" id="Lh0-89-aPw"/>
+                                    <constraint firstItem="Qdx-PN-gN6" firstAttribute="top" secondItem="WtY-ep-kH2" secondAttribute="top" id="OMf-Bp-oiG"/>
+                                    <constraint firstAttribute="bottom" secondItem="MWQ-x0-LZe" secondAttribute="bottom" id="gIO-O4-mdV"/>
+                                    <constraint firstItem="MWQ-x0-LZe" firstAttribute="leading" secondItem="WtY-ep-kH2" secondAttribute="leading" id="leN-sj-g3n"/>
+                                    <constraint firstItem="Qdx-PN-gN6" firstAttribute="leading" secondItem="WtY-ep-kH2" secondAttribute="leading" id="qt3-A0-fud"/>
+                                    <constraint firstAttribute="width" constant="80" id="zb3-ee-Cn2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.33977959169999999" green="0.93753366599999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WtY-ep-kH2" secondAttribute="bottom" id="JpN-d0-fHI"/>
+                            <constraint firstItem="WtY-ep-kH2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="TTM-1i-TQh"/>
+                            <constraint firstItem="WtY-ep-kH2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="glW-C5-YnP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sidebar Menu" id="d17-bY-M2M">
+                        <barButtonItem key="leftBarButtonItem" image="if_icons_menu_1564512" id="t04-Ad-xrK">
+                            <color key="tintColor" red="0.33977959169999999" green="0.93753366599999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="menuButtonClicked:" destination="BYZ-38-t0r" id="x8l-ay-Qq7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="alertButton" destination="sPz-xK-4Fc" id="1hd-xM-5V2"/>
+                        <outlet property="curveImageView" destination="Qdx-PN-gN6" id="BBc-xm-UOa"/>
+                        <outlet property="flagButton" destination="ANs-hX-rVn" id="yJL-H3-ZFJ"/>
+                        <outlet property="homeButton" destination="ilN-7D-LJt" id="3Zn-TQ-L1w"/>
+                        <outlet property="mailButton" destination="nO6-hN-Zd8" id="0QB-p9-wB2"/>
+                        <outlet property="retweetButton" destination="UKG-FQ-NfN" id="ypj-Uf-cGm"/>
+                        <outlet property="sideBarView" destination="WtY-ep-kH2" id="Q6V-YT-IW7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="36.431784107946029"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Eey-m6-Sch">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cxp-Ye-8YB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bA4-94-B7m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="FN5-PT-RIO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Yc-MY-7gP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="13" width="69" height="368"/>
+        <image name="if_additional_icons-04_2239895" width="128" height="128"/>
+        <image name="if_icons_menu_1564512" width="32" height="32"/>
+        <image name="if_jee01-24_2184646" width="128" height="128"/>
+        <image name="if_jee01-28_2184670" width="128" height="128"/>
+        <image name="if_jee01-32_2184666" width="128" height="128"/>
+        <image name="if_jee01-35_2184645" width="128" height="128"/>
+    </resources>
+</document>
