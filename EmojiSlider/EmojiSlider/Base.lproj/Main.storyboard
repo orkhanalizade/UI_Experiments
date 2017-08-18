@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EmojiSlider" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="fox-WF-tur">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="1" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="5wF-gC-iMc">
+                                <rect key="frame" x="14" y="318" width="347" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.87058823529411766" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" red="0.87058823529411766" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="thumbTintColor" red="0.33977959169999999" green="0.93753366599999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="4tg-9N-LDT"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFX-e7-R2y">
+                                <rect key="frame" x="166" y="293" width="42" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5da-yc-7HD">
+                                <rect key="frame" x="16" y="619" width="343" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate us 🤔" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0K-nK-LdZ">
+                                        <rect key="frame" x="16" y="8" width="311" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                        <color key="textColor" red="0.94696968793869019" green="0.69689834117889404" blue="0.38245922327041626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="JWO-KL-k1N"/>
+                                    <constraint firstItem="P0K-nK-LdZ" firstAttribute="leading" secondItem="5da-yc-7HD" secondAttribute="leading" constant="16" id="bcT-lD-W3d"/>
+                                    <constraint firstAttribute="bottom" secondItem="P0K-nK-LdZ" secondAttribute="bottom" constant="8" id="ipa-VS-a5q"/>
+                                    <constraint firstItem="P0K-nK-LdZ" firstAttribute="top" secondItem="5da-yc-7HD" secondAttribute="top" constant="8" id="kAo-Os-O9q"/>
+                                    <constraint firstAttribute="trailing" secondItem="P0K-nK-LdZ" secondAttribute="trailing" constant="16" id="oCm-Pg-ajy"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How satisfied are you with our app?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qsu-eR-4xY">
+                                <rect key="frame" x="16" y="125" width="343" height="93"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5da-yc-7HD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="56o-0U-LLc"/>
+                            <constraint firstItem="fox-WF-tur" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AsG-5X-DI8"/>
+                            <constraint firstItem="5wF-gC-iMc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FKL-xD-Dfz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fox-WF-tur" secondAttribute="bottom" id="Lbc-Ih-meJ"/>
+                            <constraint firstItem="5wF-gC-iMc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="PcH-7B-1U5"/>
+                            <constraint firstItem="qFX-e7-R2y" firstAttribute="top" secondItem="Qsu-eR-4xY" secondAttribute="bottom" constant="75" id="QcT-y0-TI9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5da-yc-7HD" secondAttribute="bottom" constant="8" id="Qrc-QZ-hMk"/>
+                            <constraint firstItem="Qsu-eR-4xY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="UZD-8R-J5G"/>
+                            <constraint firstItem="5wF-gC-iMc" firstAttribute="top" secondItem="qFX-e7-R2y" secondAttribute="bottom" constant="8" id="VNF-70-Z97"/>
+                            <constraint firstAttribute="trailing" secondItem="5da-yc-7HD" secondAttribute="trailing" constant="16" id="fle-WA-vco"/>
+                            <constraint firstItem="fox-WF-tur" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hfL-eT-ESA"/>
+                            <constraint firstAttribute="trailing" secondItem="fox-WF-tur" secondAttribute="trailing" id="iZm-53-Czk"/>
+                            <constraint firstAttribute="trailing" secondItem="5wF-gC-iMc" secondAttribute="trailing" constant="16" id="tMJ-qg-8Ds"/>
+                            <constraint firstAttribute="trailing" secondItem="Qsu-eR-4xY" secondAttribute="trailing" constant="16" id="uke-Mk-na4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="P0K-nK-LdZ" id="tfr-0z-bdL"/>
+                        <outlet property="slider" destination="5wF-gC-iMc" id="cqg-J9-aNn"/>
+                        <outlet property="valueLabel" destination="qFX-e7-R2y" id="lEV-uW-2ya"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="333" height="579"/>
+    </resources>
+</document>
